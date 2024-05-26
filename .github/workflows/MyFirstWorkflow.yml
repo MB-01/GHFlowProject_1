@@ -6,8 +6,8 @@ on:
       - main
       - 'release/**'
       - 'dev/**'
-    paths:
-      - 'doc/**'
+    #paths:
+      #- 'doc/**'
 jobs:
   job-number-1:
     name: job to do something
