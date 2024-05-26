@@ -1,0 +1,21 @@
+# Description: Template for a GitHub Action Workflow
+name: GHFlow_Action1
+on:
+  push:
+    branches:
+      - main
+      - 'release/**'
+      - 'dev/**'
+    paths:
+      - 'doc/**'
+jobs:
+  job-number-1:
+    name: job to do something
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "My first task"
+  job-number-2:
+    name: job to do a second thing
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "My second task"
